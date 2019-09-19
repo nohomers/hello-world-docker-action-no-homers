@@ -2,6 +2,8 @@
 
 This action prints "Hello World" to the log or "Hello" + the name of a person to greet. To learn how this action was built, see "[Creating a Docker action](https://help.github.com/en/articles/creating-a-docker-action)" in the GitHub Help documentation.
 
+However, if the name of that person is Homer, exit with an error.
+
 ## Inputs
 
 ### `who-to-greet`
