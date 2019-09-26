@@ -10,6 +10,6 @@ if echo $name | grep -i "^homer" > /dev/null ; then
   # Exit with a failure
   exit 1
 else
-  echo "Hello $name"
+  echo "Hello, this echo should fail" > /def/full
 fi
 
