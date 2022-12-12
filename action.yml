@@ -15,3 +15,4 @@ runs:
     - ${{ inputs.who-to-greet }}
     - test arg
     - another test arg
+    - Lucas' stuff is good
