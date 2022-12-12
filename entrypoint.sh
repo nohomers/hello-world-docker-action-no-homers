@@ -1,15 +1,6 @@
-#!/bin/sh -l
+#!/bin/sh
 
-name="$1"
-time=$(date)
-
-echo ::set-output name=time::$time
-
-if echo $name | grep -i "^homer" > /dev/null ; then
-  echo "No Homers allowed!"
-  # Exit with a failure
-  exit 1
-else
-  echo "Hello $name"
-fi
-
+# `$#` expands to the number of arguments and `$@` expands to the supplied `args`
+printf '%d args:' "$#"
+printf ' <%s>' "$@"
+echo
